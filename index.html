@@ -6,7 +6,6 @@
     <title>Shadow Lord</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
     <img class="tin" src="image.png" alt="">
     <img class="tin" src="image copy.png" alt="">
     <img class="tin" src="image copy 2.png" alt="">
@@ -25,5 +24,34 @@
     <img class="tin" src="image copy 15.png" alt="">
     <img class="tin" src="image copy 16.png" alt="">
     <img class="tin" src="image copy 17.png" alt="">
+<style>
+    /* Estilo padrão da imagem */
+    .imagem {
+        width: 200px;
+        height: auto;
+        cursor: pointer;
+        transition: all 0.3s ease; /* Animação suave */
+    }
+
+    /* Estilo para a imagem maior */
+    .imagem.grande {
+        width: 400px; /* Define o novo tamanho */
+    }
+</style>
+</head>
+<body>
+<img 
+    src="image.png" 
+    alt="Imagem Exemplo" 
+    class="imagem" 
+    onclick="aumentarImagem(this)"
+>
+
+<script>
+    function aumentarImagem(elemento) {
+        // Alterna a classe 'grande' para aumentar ou reduzir o tamanho
+        elemento.classList.toggle('grande');
+    }
+</script>
 </body>
 </html>
